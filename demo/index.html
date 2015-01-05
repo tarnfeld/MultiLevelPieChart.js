@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Chart</title>
+	<script src="../bower_components/chartjs/Chart.js"></script>
+	<script src="../MultiLevelPieChart.js"></script>
+</head>
+<body>
+
+	<canvas id="demo" width="400" height="300"></canvas>
+
+	<script>
+
+	(function(){
+
+		var canvas = document.getElementById('demo'),
+			ctx = canvas.getContext('2d');
+
+
+		new Chart(ctx).MultiLevelPie([
+			{
+				"label": "/",
+				"value": 1000,
+				"color": "red",
+				"children": [
+					{
+						"label": "/foo",
+						"value": 500,
+						"color": "red",
+						"children": [
+							{
+								"label": "/foo/a",
+								"value": 500,
+								"children": []
+							}
+						]
+					},
+					{
+						"label": "/bar",
+						"value": 500,
+						"color": "red",
+						"children": [
+							{
+								"label": "/bar/b",
+								"value": 500,
+								"color": "red",
+								"children": []
+							}
+						]
+					},
+				]
+			}
+		]);
+
+
+
+	}).call(this);
+
+	</script>
+</body>
+</html>
+
