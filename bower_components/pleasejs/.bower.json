@@ -1,0 +1,32 @@
+{
+  "name": "pleasejs",
+  "version": "0.4.2",
+  "homepage": "https://github.com/Fooidge/PleaseJS",
+  "authors": [
+    "Fooidge"
+  ],
+  "description": "JS library to generate random pleasing colors/color schemes",
+  "main": "Please.js",
+  "keywords": [
+    "color",
+    "scheme",
+    "random"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.4.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.2",
+    "commit": "f4c00cf7a87051ebd2a2e4073717d11b61b531c9"
+  },
+  "_source": "git://github.com/Fooidge/PleaseJS.git",
+  "_target": "~0.4.2",
+  "_originalSource": "pleasejs"
+}
