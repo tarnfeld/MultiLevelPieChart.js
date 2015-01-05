@@ -1,0 +1,20 @@
+{
+  "name": "MultiLevelPieChart",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tarnfeld/MultiLevelPieChart.js",
+  "authors": [
+    "Tom Arnfeld <tarnfeld@me.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chartjs": "1.0.1-beta.4"
+  }
+}
