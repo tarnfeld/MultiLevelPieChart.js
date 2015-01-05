@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "chartjs": "1.0.1-beta.4"
+    "chartjs": "1.0.1-beta.4",
+    "pleasejs": "~0.4.2"
   }
 }

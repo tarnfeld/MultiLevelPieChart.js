@@ -1,62 +1,242 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Demo Chart</title>
-	<script src="../bower_components/chartjs/Chart.js"></script>
-	<script src="../MultiLevelPieChart.js"></script>
-</head>
-<body>
+    <head>
+        <title>Demo</title>
 
-	<canvas id="demo" width="400" height="300"></canvas>
+        <script src="../bower_components/chartjs/Chart.js"></script>
+        <script src="../MultiLevelPieChart.js"></script>
+        <script src="../bower_components/pleasejs/dist/Please.js"></script>
+    </head>
+    <body>
 
-	<script>
+        <canvas id="demo" width="400" height="400"></canvas>
 
-	(function(){
+        <script>
+        (function(){
+            var canvas = document.getElementById('demo'),
+                ctx = canvas.getContext('2d');
 
-		var canvas = document.getElementById('demo'),
-			ctx = canvas.getContext('2d');
+            new Chart(ctx).MultiLevelPie([
+                {
+                    label: "Foo",
+                    value: 1000,
+                    color: Please.make_color()[0],
+                    children: [
+                        {
+                            label: "Bar",
+                            value: 300,
+                            color: Please.make_color()[0],
+                            children: [
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Baz",
+                                    value: 30,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                }
+                            ]
+                        },
+                        {
+                            label: "Demo",
+                            value: 700,
+                            color: Please.make_color()[0],
+                            children: []
+                        }
+                    ]
+                },
+                {
+                    label: "Root",
+                    value: 500,
+                    color: Please.make_color()[0],
+                    children: [
+                        {
+                            label: "Second",
+                            value: 300,
+                            color: Please.make_color()[0],
+                            children: []
+                        },
+                        {
+                            label: "First",
+                            value: 200,
+                            color: Please.make_color()[0],
+                            children: [
+                                {
+                                    label: "Child",
+                                    value: 50,
+                                    color: Please.make_color()[0],
+                                    children: [
+                                        {
+                                            label: "Child",
+                                            value: 10,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 10,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 10,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 10,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 10,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: "Child",
+                                    value: 50,
+                                    color: Please.make_color()[0],
+                                    children: [
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        },
+                                        {
+                                            label: "Child",
+                                            value: 5,
+                                            color: Please.make_color()[0],
+                                            children: []
+                                        }
+                                    ]
+                                },
+                                {
+                                    label: "Child",
+                                    value: 50,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                },
+                                {
+                                    label: "Child",
+                                    value: 50,
+                                    color: Please.make_color()[0],
+                                    children: []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]);
 
+        }).call(this);
 
-		new Chart(ctx).MultiLevelPie([
-			{
-				"label": "/",
-				"value": 1000,
-				"color": "red",
-				"children": [
-					{
-						"label": "/foo",
-						"value": 500,
-						"color": "red",
-						"children": [
-							{
-								"label": "/foo/a",
-								"value": 500,
-								"children": []
-							}
-						]
-					},
-					{
-						"label": "/bar",
-						"value": 500,
-						"color": "red",
-						"children": [
-							{
-								"label": "/bar/b",
-								"value": 500,
-								"color": "red",
-								"children": []
-							}
-						]
-					},
-				]
-			}
-		]);
-
-
-
-	}).call(this);
-
-	</script>
-</body>
+        </script>
+    </body>
 </html>
-
