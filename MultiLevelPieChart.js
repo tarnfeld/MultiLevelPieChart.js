@@ -118,6 +118,12 @@
 				this.total += segment.value;
 			}, this);
 		},
+		reflow: function(){
+			helpers.extend(this.SegmentArc.prototype, {
+				x: this.chart.width / 2,
+				y: this.chart.height / 2,
+			});
+		},
 		draw: function(easeDecimal){
 
 			var animDecimal = (easeDecimal) ? easeDecimal : 1;
