@@ -9,12 +9,17 @@
     </head>
     <body>
 
-        <canvas id="demo" width="400" height="400"></canvas>
+        <div style="width: 50%; min-width: 300px;">
+            <canvas id="demo" width="300" height="300"></canvas>
+        </div>
 
         <script>
         (function(){
             var canvas = document.getElementById('demo'),
-                ctx = canvas.getContext('2d');
+                ctx = canvas.getContext('2d'),
+                config = {
+                    responsive: true
+                };
 
             new Chart(ctx).MultiLevelPie([
                 {
@@ -233,7 +238,7 @@
                         }
                     ]
                 }
-            ]);
+            ], config);
 
         }).call(this);
 
