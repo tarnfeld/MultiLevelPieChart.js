@@ -25,7 +25,10 @@
 			startAngle: Math.PI * 1.5,
 
 			// Number - Maximum number of children to show before halting
-			maxChildren: 150
+			maxChildren: 150,
+
+			// Boolean - Don't render segments that only have one child
+			skipDirectChildren: false
 		},
 
 		initialize: function(data){
@@ -79,7 +82,7 @@
 			var innerRadius = depth * this.options.segmentWidth,
 				outerRadius = innerRadius + this.options.segmentWidth;
 
-			if (segmentData.children && segmentData.children.length == 1) {
+			if (this.options.skipDirectChildren && segmentData.children && segmentData.children.length == 1) {
 				this.addSegments(segmentData.children[0], depth, collection);
 			} else {
 				var segment = new this.SegmentArc({
